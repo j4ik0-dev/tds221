@@ -7,10 +7,7 @@
         </div>
     </section>
     </main>
-    
-
-    <!-- ===== FORMULARIO ===== -->
-    <section class="booking-form">
+        <section class="booking-form">
         <div class="container">
             <h2>Reserva de Vuelo</h2>
             <form action="#" method="post">
@@ -106,7 +103,6 @@ export default {
 </script>
 
 <style scoped>
-/* RESET GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -121,7 +117,6 @@ html, body {
     width: 100%;
 }
 
-/* LAYOUT PRINCIPAL */
 body {
     display: flex;
     flex-direction: column;
@@ -129,13 +124,12 @@ body {
 }
 
 main {
-    flex: 1; /* Ocupa todo el espacio disponible entre banner y footer */
+    flex: 1;
     background-color: #f5f9fc;
     color: #333;
     line-height: 1.6;
 }
 
-/* ====== BANNER ====== */
 .banner {
     width: 100%;
     height: 60vh;
@@ -172,7 +166,6 @@ main {
     font-weight: 300;
 }
 
-/* ====== FORMULARIO ====== */
 .booking-form {
     padding: 3rem 1.5rem;
     background: #fff;
@@ -235,7 +228,6 @@ input[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
-/* ====== FOOTER ====== */
 footer {
     background: #00264d;
     color: #fff;
