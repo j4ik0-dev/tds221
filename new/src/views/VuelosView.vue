@@ -1,11 +1,13 @@
 <template>
-    <!-- ===== BANNER ===== -->
-    <section class="banner">
+    <main>
+        <section class="banner">
         <div class="banner-texto">
             <h1>Reserva tu vuelo con Salvadorian Airlines</h1>
             <p>¡Explora el mundo con nosotros!</p>
         </div>
     </section>
+    </main>
+    
 
     <!-- ===== FORMULARIO ===== -->
     <section class="booking-form">
@@ -69,7 +71,7 @@
                 alt="logo de Instagram" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
                 alt="logo de Facebook" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/X_logo_2023.svg" alt="Logo de X" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="Logo de X" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
                 alt="Logo de LinkedIn" />
 
@@ -104,6 +106,7 @@ export default {
 </script>
 
 <style scoped>
+/* RESET GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -111,12 +114,28 @@ export default {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* LAYOUT PRINCIPAL */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 main {
+    flex: 1; /* Ocupa todo el espacio disponible entre banner y footer */
     background-color: #f5f9fc;
     color: #333;
     line-height: 1.6;
 }
 
+/* ====== BANNER ====== */
 .banner {
     width: 100%;
     height: 60vh;
@@ -127,10 +146,6 @@ main {
     position: relative;
     background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80") no-repeat center center/cover;
 }
-.banner, footer {
-    width: 100%;
-}
-
 
 .banner::after {
     content: "";
@@ -220,6 +235,7 @@ input[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
+/* ====== FOOTER ====== */
 footer {
     background: #00264d;
     color: #fff;
@@ -263,15 +279,19 @@ footer .redes img:hover {
     text-decoration: underline;
 }
 
-footer .sucursales p {
-    max-width: 220px;
-    width: 100%;
+footer .sucursales {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 footer .sucursales p {
     max-width: 220px;
     text-align: left;
     line-height: 1.5;
+    width: 100%;
 }
 
 #sedes {
@@ -286,14 +306,4 @@ footer .sucursales p {
     font-size: 0.85rem;
     opacity: 0.7;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-main {
-    min-height: calc(100vh - 200px);
-}
-
 </style>
