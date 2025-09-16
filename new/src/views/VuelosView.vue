@@ -1,110 +1,100 @@
 <template>
-    <main>
-        <!-- ===== BANNER ===== -->
-        <section class="banner">
-            <div class="banner-texto">
-                <h1>Reserva tu vuelo con Salvadorian Airlines</h1>
-                <p>¡Explora el mundo con nosotros!</p>
-            </div>
-        </section>
+    <!-- ===== BANNER ===== -->
+    <section class="banner">
+        <div class="banner-texto">
+            <h1>Reserva tu vuelo con Salvadorian Airlines</h1>
+            <p>¡Explora el mundo con nosotros!</p>
+        </div>
+    </section>
 
-        <!-- ===== FORMULARIO ===== -->
-        <section class="booking-form">
-            <div class="container">
-                <h2>Reserva de Vuelo</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="origen">Origen:</label>
-                        <select id="origen" name="origen" required>
-                            <option value="">Seleccionar</option>
-                            <option value="El Salvador">El Salvador</option>
-                            <option value="Guatemala">Guatemala</option>
-                            <option value="Honduras">Honduras</option>
-                            <option value="Costa Rica">Costa Rica</option>
-                            <option value="Panama">Panamá</option>
-                            <option value="Colombia">Colombia</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="destino">Destino:</label>
-                        <select id="destino" name="destino" required>
-                            <option value="">Seleccionar</option>
-                            <option value="El Salvador">El Salvador</option>
-                            <option value="Guatemala">Guatemala</option>
-                            <option value="Honduras">Honduras</option>
-                            <option value="Costa Rica">Costa Rica</option>
-                            <option value="Panama">Panamá</option>
-                            <option value="Colombia">Colombia</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaSalida">Fecha de salida:</label>
-                        <input type="date" id="fechaSalida" name="fechaSalida" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaRegreso">Fecha de regreso:</label>
-                        <input type="date" id="fechaRegreso" name="fechaRegreso" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="pasajeros">Número de Pasajeros:</label>
-                        <select id="pasajeros" name="pasajeros" required>
-                            <option value="">Seleccionar</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Reservar Vuelo" />
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <!-- ===== FOOTER ===== -->
-        <footer>
-            <div class="redes">
-                <p>Contacta con nosotros</p>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="@/assets/imagenes/Instagram_logo_2022.svg" alt="logo de Instagram" />
-                </a>
-                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" rel="noopener noreferrer">
-                    <img src="@/assets/imagenes/Facebook.png" alt="logo de Facebook" />
-                </a>
-                <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="@/assets/imagenes/X_logo_2023.svg" alt="Logo de X (antes Twitter)" />
-                </a>
-                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
-                    <img src="@/assets/imagenes/LinkedIn_icon.svg.png" alt="Logo de LinkedIn" />
-                </a>
-                <a id="correo_oficial" href="mailto:info@salvadorian.airlines">
-                    info@salvadorian.airlines
-                </a>
-            </div>
-
-            <div class="sucursales">
-                <div id="Sucursal_sv">
-                    <p id="sedes">SEDES</p>
-                    <p>
-                        <br />El Salvador<br /><br />
-                        La Libertad<br />
-                        Zona Comercial #3, Calle Primavera y, Santa Tecla
-                    </p>
+    <!-- ===== FORMULARIO ===== -->
+    <section class="booking-form">
+        <div class="container">
+            <h2>Reserva de Vuelo</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="origen">Origen:</label>
+                    <select id="origen" name="origen" required>
+                        <option value="">Seleccionar</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Panama">Panamá</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>
                 </div>
-                <div class="Sucursal_colombia">
-                    <p>
-                        <br />Colombia<br /><br />
-                        Bello<br />
-                        Av. 40 #Diagonal 55A #41, Hermosa Provincia, Antioquia.
-                    </p>
+                <div class="form-group">
+                    <label for="destino">Destino:</label>
+                    <select id="destino" name="destino" required>
+                        <option value="">Seleccionar</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Panama">Panamá</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="fechaSalida">Fecha de salida:</label>
+                    <input type="date" id="fechaSalida" name="fechaSalida" required />
+                </div>
+                <div class="form-group">
+                    <label for="fechaRegreso">Fecha de regreso:</label>
+                    <input type="date" id="fechaRegreso" name="fechaRegreso" required />
+                </div>
+                <div class="form-group">
+                    <label for="pasajeros">Número de Pasajeros:</label>
+                    <select id="pasajeros" name="pasajeros" required>
+                        <option value="">Seleccionar</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Reservar Vuelo" />
+                </div>
+            </form>
+        </div>
+    </section>
 
-            <p id="copyright">Copyright © Salvadorian Airlines</p>
-        </footer>
-    </main>
+    <footer>
+        <div class="redes">
+            <p>Contacta con nosotros</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+                alt="logo de Instagram" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="logo de Facebook" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/X_logo_2023.svg" alt="Logo de X" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                alt="Logo de LinkedIn" />
+
+        </div>
+
+        <div class="sucursales">
+            <div id="Sucursal_sv">
+                <p id="sedes">SEDES</p>
+                <p>
+                    <br />El Salvador<br /><br />
+                    La Libertad<br />
+                    Zona Comercial #3, Calle Primavera y, Santa Tecla
+                </p>
+            </div>
+            <div class="Sucursal_colombia">
+                <p>
+                    <br />Colombia<br /><br />
+                    Bello<br />
+                    Av. 40 #Diagonal 55A #41, Hermosa Provincia, Antioquia.
+                </p>
+            </div>
+        </div>
+
+        <p id="copyright">Copyright © Salvadorian Airlines</p>
+    </footer>
 </template>
 
 <script>
@@ -127,16 +117,20 @@ main {
     line-height: 1.6;
 }
 
-/* ====== BANNER ====== */
 .banner {
-    background: url("@/assets/avion-banner.jpg") no-repeat center center/cover;
+    width: 100%;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80") no-repeat center center/cover;
 }
+.banner, footer {
+    width: 100%;
+}
+
 
 .banner::after {
     content: "";
@@ -226,7 +220,6 @@ input[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
-/* ====== FOOTER ====== */
 footer {
     background: #00264d;
     color: #fff;
@@ -270,12 +263,9 @@ footer .redes img:hover {
     text-decoration: underline;
 }
 
-footer .sucursales {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+footer .sucursales p {
+    max-width: 220px;
+    width: 100%;
 }
 
 footer .sucursales p {
@@ -296,4 +286,14 @@ footer .sucursales p {
     font-size: 0.85rem;
     opacity: 0.7;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    min-height: calc(100vh - 200px);
+}
+
 </style>
