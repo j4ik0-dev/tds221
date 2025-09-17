@@ -104,6 +104,39 @@
       </div>
     </div>
   </div>
+  <footer>
+        <div class="redes">
+            <p>Contacta con nosotros</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+                alt="logo de Instagram" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="logo de Facebook" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="Logo de X" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                alt="Logo de LinkedIn" />
+
+        </div>
+
+        <div class="sucursales">
+            <div id="Sucursal_sv">
+                <p id="sedes">SEDES</p>
+                <p>
+                    <br />El Salvador<br /><br />
+                    La Libertad<br />
+                    Zona Comercial #3, Calle Primavera y, Santa Tecla
+                </p>
+            </div>
+            <div class="Sucursal_colombia">
+                <p>
+                    <br />Colombia<br /><br />
+                    Bello<br />
+                    Av. 40 #Diagonal 55A #41, Hermosa Provincia, Antioquia.
+                </p>
+            </div>
+        </div>
+
+        <p id="copyright">Copyright © Salvadorian Airlines</p>
+    </footer>
 </template>
 
 <script setup>
@@ -237,5 +270,75 @@ button[type="submit"]:hover {
 .rounded-lg {
   border-radius: 10px;
   padding: 1rem;
+}
+footer {
+    background: #00264d;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer .redes {
+    margin-bottom: 1.5rem;
+}
+
+footer .redes p {
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+footer .redes a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .redes img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+footer .redes img:hover {
+    transform: scale(1.2);
+}
+
+#correo_oficial {
+    display: block;
+    margin-top: 0.6rem;
+    color: #00bfff;
+    text-decoration: none;
+}
+
+#correo_oficial:hover {
+    text-decoration: underline;
+}
+
+footer .sucursales {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+footer .sucursales p {
+    max-width: 220px;
+    text-align: left;
+    line-height: 1.5;
+    width: 100%;
+}
+
+#sedes {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    color: #00bfff;
+}
+
+#copyright {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
 }
 </style>

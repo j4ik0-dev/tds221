@@ -29,5 +29,16 @@ nav a {
 nav a.router-link-exact-active {
   color: #00bfff;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(255, 255, 255); /* 👈 mismo azul que el header */
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+.banner-hotel {
+  margin-top: 0;
+}
 </style>
