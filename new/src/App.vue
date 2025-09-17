@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Inicio</router-link> |
+    <router-link to="/inicio">Inicio</router-link> |
     <router-link to="/vuelos">Vuelos</router-link> |
     <router-link to="/hoteles">Hoteles</router-link> |
     <router-link to="/cruceros">Cruceros</router-link>
